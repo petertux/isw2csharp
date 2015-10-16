@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="dfed0e74cad94bccbac26c248d1588f1" Name="Diagram1">
+        <EntityTypeShape EntityType="mydbModel.caja" Width="1.5" PointX="12.75" PointY="23" IsExpanded="true" />
+        <EntityTypeShape EntityType="mydbModel.categoria_producto" Width="1.5" PointX="8.25" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="mydbModel.compra" Width="1.5" PointX="5.25" PointY="10.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="mydbModel.compra_proveedor" Width="1.5" PointX="10.5" PointY="10.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="mydbModel.departamento" Width="1.5" PointX="6" PointY="23.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="mydbModel.deta_compra" Width="1.5" PointX="7.5" PointY="13.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="mydbModel.detalle_venta" Width="1.5" PointX="7.5" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="mydbModel.empleado" Width="1.5" PointX="8.25" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="mydbModel.municipio" Width="1.5" PointX="8.25" PointY="22.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="mydbModel.nota_credito" Width="1.5" PointX="3" PointY="14.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="mydbModel.orden_compra" Width="1.5" PointX="3" PointY="17.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="mydbModel.persona" Width="1.5" PointX="6" PointY="16.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="mydbModel.presentacion_producto" Width="1.5" PointX="8.25" PointY="17.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="mydbModel.producto" Width="1.5" PointX="10.5" PointY="6" IsExpanded="true" />
+        <EntityTypeShape EntityType="mydbModel.producto_sucursal" Width="1.5" PointX="12.75" PointY="6.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="mydbModel.proveedor" Width="1.5" PointX="8.25" PointY="26.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="mydbModel.rol" Width="1.5" PointX="0.75" PointY="11.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="mydbModel.seccion_bodega" Width="1.5" PointX="8.25" PointY="19.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="mydbModel.sucursal" Width="1.5" PointX="10.5" PointY="22.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="mydbModel.tipo_nota_credito" Width="1.5" PointX="0.75" PointY="15" IsExpanded="true" />
+        <EntityTypeShape EntityType="mydbModel.tipo_proveedor" Width="1.5" PointX="6" PointY="27.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="mydbModel.tipo_venta" Width="1.5" PointX="3" PointY="7.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="mydbModel.usuario" Width="1.5" PointX="3" PointY="10.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="mydbModel.venta" Width="1.5" PointX="5.25" PointY="6.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="mydbModel.venta_producto" Width="1.5" PointX="7.5" PointY="6.75" IsExpanded="true" />
+        <AssociationConnector Association="mydbModel.fk_CAJA_SUCURSAL1" ManuallyRouted="false" />
+        <AssociationConnector Association="mydbModel.fk_PRODUCTO_CATEGORIA_PRODUCTO1" ManuallyRouted="false" />
+        <AssociationConnector Association="mydbModel.fk_COMPRA_NOTA_CREDITO1" ManuallyRouted="false" />
+        <AssociationConnector Association="mydbModel.fk_COMPRA_ORDEN_COMPRA1" ManuallyRouted="false" />
+        <AssociationConnector Association="mydbModel.fk_COMPRA_PRODUCTO1" ManuallyRouted="false" />
+        <AssociationConnector Association="mydbModel.fk_COMPRA_PROVEEDOR_COMPRA1" ManuallyRouted="false" />
+        <AssociationConnector Association="mydbModel.fk_COMPRA_USUARIO1" ManuallyRouted="false" />
+        <AssociationConnector Association="mydbModel.fk_DETA_COMPRA_COMPRA1" ManuallyRouted="false" />
+        <AssociationConnector Association="mydbModel.fk_COMPRA_PROVEEDOR_PROVEEDOR1" ManuallyRouted="false" />
+        <AssociationConnector Association="mydbModel.fk_MUNICIPIO_DEPARTAMENTO1" ManuallyRouted="false" />
+        <AssociationConnector Association="mydbModel.fk_DETALLE_VENTA_PRODUCTO1" ManuallyRouted="false" />
+        <AssociationConnector Association="mydbModel.fk_DETALLE_VENTA_VENTA1" ManuallyRouted="false" />
+        <AssociationConnector Association="mydbModel.fk_EMPLEADO_PERSONA1" ManuallyRouted="false" />
+        <AssociationConnector Association="mydbModel.fk_EMPLEADO_SUCURSAL1" ManuallyRouted="false" />
+        <AssociationConnector Association="mydbModel.fk_EMPLEADO_USUARIO1" ManuallyRouted="false" />
+        <AssociationConnector Association="mydbModel.fk_PERSONA_MUNICIPIO1" ManuallyRouted="false" />
+        <AssociationConnector Association="mydbModel.fk_SUCURSAL_MUNICIPIO1" ManuallyRouted="false" />
+        <AssociationConnector Association="mydbModel.fk_NOTA_CREDITO_TIPO_NOTA_CREDITO1" ManuallyRouted="false" />
+        <AssociationConnector Association="mydbModel.fk_PRODUCTO_PRESENTACION_PRODUCTO1" ManuallyRouted="false" />
+        <AssociationConnector Association="mydbModel.fk_PRODUCTO_INVENTARIO1" ManuallyRouted="false" />
+        <AssociationConnector Association="mydbModel.fk_PRODUCTO_SECCION_BODEGA1" ManuallyRouted="false" />
+        <AssociationConnector Association="mydbModel.fk_PRODUCTO_SUCURSAL_PRODUCTO1" ManuallyRouted="false" />
+        <AssociationConnector Association="mydbModel.fk_VENTA_PRODUCTO_PRODUCTO1" ManuallyRouted="false" />
+        <AssociationConnector Association="mydbModel.fk_PRODUCTO_SUCURSAL_SUCURSAL1" ManuallyRouted="false" />
+        <AssociationConnector Association="mydbModel.fk_PROVEEDOR_TIPO_PROVEEDOR1" ManuallyRouted="false" />
+        <AssociationConnector Association="mydbModel.fk_USUARIO_ROL1" ManuallyRouted="false" />
+        <AssociationConnector Association="mydbModel.fk_VENTA_TIPO_VENTA1" ManuallyRouted="false" />
+        <AssociationConnector Association="mydbModel.fk_VENTA_PRODUCTO_USUARIO1" ManuallyRouted="false" />
+        <AssociationConnector Association="mydbModel.fk_VENTA_USUARIO1" ManuallyRouted="false" />
+        <AssociationConnector Association="mydbModel.fk_VENTA_PRODUCTO_VENTA1" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

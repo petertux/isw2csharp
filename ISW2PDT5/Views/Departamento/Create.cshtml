@@ -1,0 +1,44 @@
+﻿@model ISW2PDT5.departamento
+
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Create</h2>
+
+@using (Html.BeginForm()) {
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend>departamento</legend>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.id_departamento)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.id_departamento)
+            @Html.ValidationMessageFor(model => model.id_departamento)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.dep_nombre)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.dep_nombre)
+            @Html.ValidationMessageFor(model => model.dep_nombre)
+        </div>
+
+        <p>
+            <input type="submit" value="Create" />
+        </p>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
