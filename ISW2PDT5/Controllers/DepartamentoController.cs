@@ -16,7 +16,7 @@ namespace ISW2PDT5.Controllers
         // GET: /Departamento/
 
         public ActionResult Index()
-        {
+        {//ver dep
             return View(db.departamentoes.ToList());
         }
 
