@@ -1,0 +1,52 @@
+﻿@model ISW2PDT5.municipio
+
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Create</h2>
+
+@using (Html.BeginForm()) {
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend>municipio</legend>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.id_municipio)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.id_municipio)
+            @Html.ValidationMessageFor(model => model.id_municipio)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.mun_nom)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.mun_nom)
+            @Html.ValidationMessageFor(model => model.mun_nom)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.DEPARTAMENTO_id_departamento, "departamento")
+        </div>
+        <div class="editor-field">
+            @Html.DropDownList("DEPARTAMENTO_id_departamento", String.Empty)
+            @Html.ValidationMessageFor(model => model.DEPARTAMENTO_id_departamento)
+        </div>
+
+        <p>
+            <input type="submit" value="Create" />
+        </p>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

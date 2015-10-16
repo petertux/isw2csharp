@@ -1,0 +1,36 @@
+﻿@model ISW2PDT5.municipio
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>municipio</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.id_municipio)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.id_municipio)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.mun_nom)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.mun_nom)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.departamento.dep_nombre)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.departamento.dep_nombre)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { /* id=Model.PrimaryKey */ }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

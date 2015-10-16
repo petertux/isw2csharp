@@ -1,0 +1,40 @@
+﻿@model ISW2PDT5.municipio
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<fieldset>
+    <legend>municipio</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.id_municipio)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.id_municipio)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.mun_nom)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.mun_nom)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.departamento.dep_nombre)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.departamento.dep_nombre)
+    </div>
+</fieldset>
+@using (Html.BeginForm()) {
+    @Html.AntiForgeryToken()
+    <p>
+        <input type="submit" value="Delete" /> |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+}

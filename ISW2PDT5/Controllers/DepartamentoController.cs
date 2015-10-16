@@ -29,6 +29,7 @@ namespace ISW2PDT5.Controllers
             if (departamento == null)
             {
                 return HttpNotFound();
+                //return View(departamento);
             }
             return View(departamento);
         }
